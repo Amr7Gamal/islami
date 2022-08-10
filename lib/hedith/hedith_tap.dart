@@ -54,6 +54,7 @@ class _HedithState extends State<Hedith> {
     for (int i = 0; i < theHedith.length; i++) {
       List<String> hedithLines = theHedith[i].trim().split("\r");
       String title = hedithLines[0];
+      if(title.isEmpty)continue;
       hedithLines.removeAt(0);
       String contentHedith = hedithLines.join("\n");
       HedithData h = HedithData(title, contentHedith);
