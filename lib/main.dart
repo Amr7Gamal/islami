@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:islami/hedith/hedith.dart';
+import 'package:islami/hedith/hedith_tap.dart';
 import 'package:islami/home.dart';
 import 'package:islami/mythem.dart';
 import 'package:islami/quran/sura.dart';
@@ -16,7 +18,10 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: "islami",
      initialRoute: Home.nameKey,
-     routes: {Home.nameKey : (_)=>Home() , Sura.nameKey : (_)=> Sura()},
+     routes: {Home.nameKey : (_)=>Home() , Sura.nameKey : (_)=> Sura(),
+       HedithScreen.nameKey : (_)=>HedithScreen()
+     },
+
     );
   }
 }
