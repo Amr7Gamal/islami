@@ -26,7 +26,7 @@ class MyThem {
         headline1: TextStyle(
             fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black),
         headline2: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-        headline3: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
-        headline4: TextStyle(fontSize: 20)),
+        headline3: TextStyle(fontSize: 25, fontWeight: FontWeight.w400),
+        headline4: TextStyle(fontSize: 20, fontWeight: FontWeight.bold , color: Colors.white)  ),
   );
 }
