@@ -23,7 +23,7 @@ class HedithScreen extends StatelessWidget {
                     margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                     child:SingleChildScrollView(
                         padding: EdgeInsets.symmetric(horizontal: 14),
-                        child: Text(args.hedith , style: Theme.of(context).textTheme.headline4,textAlign: TextAlign.right,)),
+                        child: Text(args.hedith , style: Theme.of(context).textTheme.headline3,textAlign: TextAlign.right,)),
                     ),
                   ));
   }

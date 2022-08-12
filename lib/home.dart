@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
                 icon: ImageIcon(AssetImage("assets/images/hedith_icon.png")),
                 label: "Hedith"),
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/sebha.png")),
+                icon: ImageIcon(AssetImage("assets/images/sebha_icon.png")),
                 label: "Sebha"),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage("assets/images/radio.png")),
