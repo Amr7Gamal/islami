@@ -40,10 +40,10 @@ class _HomeState extends State<Home> {
           },
           items: [
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/Quran.png")),
+                icon: ImageIcon(AssetImage("assets/images/quran.png")),
                 label: "Quran"),
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/hedith.png")),
+                icon: ImageIcon(AssetImage("assets/images/hedith_icon.png")),
                 label: "Hedith"),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage("assets/images/sebha.png")),

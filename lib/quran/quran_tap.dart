@@ -30,7 +30,7 @@ class Quran extends StatelessWidget{
           child: ListView.separated(itemBuilder: (_ , index){
             return SuraNameWidget(name[index] , index );
           }, itemCount: name.length,
-          separatorBuilder: (_ , i){
+          separatorBuilder: (_ , index){
             return Container(
               height: 2,
               color: Theme.of(context).primaryColor,
