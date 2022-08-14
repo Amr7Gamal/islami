@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/providers/settings_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SettingsLanguage extends StatefulWidget {
   @override
@@ -23,8 +22,8 @@ class _SettingsLanguageState extends State<SettingsLanguage> {
                 settingsProvider.changeLanguaga("en");
               },
               child: settingsProvider.languaga == "en"
-                  ? selected(AppLocalizations.of(context)!.english)
-                  : unSelect(AppLocalizations.of(context)!.english)),
+                  ? selected("English")
+                  : unSelect("English")),
           SizedBox(
             height: 16,
           ),
@@ -33,8 +32,8 @@ class _SettingsLanguageState extends State<SettingsLanguage> {
                 settingsProvider.changeLanguaga("ar");
               },
               child: settingsProvider.languaga == "ar"
-                  ? selected(AppLocalizations.of(context)!.arabic)
-                  : unSelect(AppLocalizations.of(context)!.arabic)),
+                  ? selected("العربية")
+                  : unSelect("العربية")),
         ],
       ),
     );

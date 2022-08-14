@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/providers/settings_provider.dart';
 import 'package:islami/settings/settingsLanguage.dart';
 import 'package:islami/settings/settingsTheme.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 
@@ -42,7 +42,7 @@ class _SettingsState extends State<Settings> {
                       Border.all(color: Theme.of(context).primaryColor, width: 1),
                   borderRadius: BorderRadius.circular(8)),
               child: Text(
-               settingsProvider.languaga == "en" ? AppLocalizations.of(context)!.english : AppLocalizations.of(context)!.arabic,
+                settingsProvider.languaga == "en" ? "English" : "العربية",
                 style: Theme.of(context).textTheme.headline5,
               ),
             ),
