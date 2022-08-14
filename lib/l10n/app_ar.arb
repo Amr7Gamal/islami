@@ -1,0 +1,14 @@
+{
+  "app_title" : "اسلامي",
+  "quran_title" :  "قران",
+  "hedith_title" : "حديث",
+  "sebha_title" : "سبحة",
+  "radio_title" : "الاذاعة",
+  "settings_title" : "الإعدادات",
+  "language" : "اللغة",
+  "theme" : "المظهر",
+  "light" : "فاتح",
+  "dark" : "مظلم",
+  "number_praises" : "عدد التسبيحات",
+  "name" : "الاسم"
+}

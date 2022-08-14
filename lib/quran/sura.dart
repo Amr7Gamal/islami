@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami/background_image.dart';
 import 'package:islami/quran/verse_widget.dart';
 
 class Sura extends StatefulWidget {
@@ -22,7 +23,7 @@ class _SuraState extends State<Sura> {
         decoration: BoxDecoration(
             image: DecorationImage(
           fit: BoxFit.fill,
-          image: AssetImage("assets/images/background.png"),
+          image: backgroundImage(context),
         )),
         child: Scaffold(
             appBar: AppBar(
@@ -34,7 +35,7 @@ class _SuraState extends State<Sura> {
             body: verses.isEmpty
                 ? CircularProgressIndicator()
                 : Container(
-                    color: Colors.white,
+                      color: Theme.of(context).backgroundColor,
                     margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                     child: ListView.separated(
                       itemBuilder: (_, index) {
