@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/quran/sura_name_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class Quran extends StatelessWidget{
   @override
@@ -23,7 +25,7 @@ class Quran extends StatelessWidget{
           decoration: BoxDecoration(
             border: Border.symmetric(horizontal: BorderSide(color: Theme.of(context).primaryColor , width: 4))
           ),
-          child: Text("Name" , style: Theme.of(context).textTheme.headline2, textAlign: TextAlign.center,),
+          child: Text(AppLocalizations.of(context)!.name , style: Theme.of(context).textTheme.headline2, textAlign: TextAlign.center,),
         ),
 
         Expanded(
