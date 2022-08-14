@@ -1,0 +1,14 @@
+{
+  "app_title" : "Islami",
+  "quran_title" :  "Quran",
+  "hedith_title" : "Hedith",
+  "sebha_title" : "Sebha",
+  "radio_title" : "Radio",
+  "settings_title" : "Settings",
+  "language" : "Language",
+  "theme" : "Theme",
+  "light" : "Light",
+  "dark" : "Dark",
+  "number_praises" : "Number of Praises",
+  "name" : "Name"
+}
