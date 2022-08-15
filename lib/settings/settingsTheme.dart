@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami/mythem.dart';
+import 'package:islami/mytheme.dart';
 import 'package:islami/providers/settings_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -22,7 +22,7 @@ class _SettingsThemeState extends State<SettingsTheme> {
         children: [
           InkWell(
               onTap: () {
-                settingsProvider.changeTheme(MyThem.lightTheme);
+                settingsProvider.changeTheme(MyTheme.lightTheme);
               },
               child: settingsProvider.isDark()
                   ? unSelect(AppLocalizations.of(context)!.light)
@@ -32,7 +32,7 @@ class _SettingsThemeState extends State<SettingsTheme> {
           ),
           InkWell(
               onTap: () {
-                settingsProvider.changeTheme(MyThem.darkTheme);
+                settingsProvider.changeTheme(MyTheme.darkTheme);
               },
               child: settingsProvider.isDark()
                   ? selected(AppLocalizations.of(context)!.dark)

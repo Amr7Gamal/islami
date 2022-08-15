@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami/mythem.dart';
+import 'package:islami/mytheme.dart';
 import 'package:islami/providers/settings_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -62,12 +62,12 @@ class _SebhaState extends State<Sebha> {
             width: 69,
             height: 81,
             decoration: BoxDecoration(
-                color: settingsProviders.isDark() ? MyThem.blueDarkColor :  Theme.of(context).primaryColor,
+                color: settingsProviders.isDark() ? MyTheme.blueDarkColor :  Theme.of(context).primaryColor,
                 borderRadius: BorderRadius.circular(50)),
             child: Text(
               "$counter",
               style: Theme.of(context).textTheme.headline3!.copyWith(
-                  color: settingsProviders.isDark() ? MyThem.whiteColor : MyThem.blackColor,
+                  color: settingsProviders.isDark() ? MyTheme.whiteColor : MyTheme.blackColor,
               ),
             ),
           ),
@@ -82,7 +82,7 @@ class _SebhaState extends State<Sebha> {
             child: Text(
               askar[index],
               style: Theme.of(context).textTheme.headline4!.copyWith(
-                color: settingsProviders.isDark() ? MyThem.blackColor : MyThem.whiteColor,
+                color: settingsProviders.isDark() ? MyTheme.blackColor : MyTheme.whiteColor,
               ),
             ),
           )

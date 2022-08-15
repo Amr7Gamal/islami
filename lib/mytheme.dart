@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:islami/providers/settings_provider.dart';
-import 'package:provider/provider.dart';
 
-class MyThem {
+
+class MyTheme {
   static final Color goldenColor = Color(0xffB7935F);
   static final Color yellowColor = Color(0xffFACC1D);
   static final Color blueDarkColor = Color(0xff141A2E);

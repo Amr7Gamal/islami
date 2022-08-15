@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:islami/mythem.dart';
+import 'package:islami/mytheme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsProvider extends ChangeNotifier{
 
-  ThemeData theme = MyThem.lightTheme;
+  ThemeData theme = MyTheme.lightTheme;
   String languaga = "ar";
 
   changeTheme(ThemeData newTheme) async {
@@ -14,7 +14,7 @@ class SettingsProvider extends ChangeNotifier{
     }
 
     theme = newTheme;
-    prefs.setString("theme", theme == MyThem.lightTheme ? "light" : "dark");
+    prefs.setString("theme", theme == MyTheme.lightTheme ? "light" : "dark");
     notifyListeners();
   }
 
@@ -30,7 +30,7 @@ class SettingsProvider extends ChangeNotifier{
   }
 
   bool isDark() {
-    return theme == MyThem.darkTheme;
+    return theme == MyTheme.darkTheme;
   }
 
 }

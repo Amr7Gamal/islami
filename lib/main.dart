@@ -3,7 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:islami/hedith/hedith.dart';
 import 'package:islami/home.dart';
-import 'package:islami/mythem.dart';
+import 'package:islami/mytheme.dart';
 import 'package:islami/providers/settings_provider.dart';
 import 'package:islami/quran/sura.dart';
 import 'package:islami/splash.dart';
@@ -54,9 +54,9 @@ class MyApp extends StatelessWidget {
     settingsProvider.changeLanguaga(prefs.getString("languaga") ?? "ar");
 
     if (prefs.getString("theme") == "light") {
-      settingsProvider.changeTheme(MyThem.lightTheme);
+      settingsProvider.changeTheme(MyTheme.lightTheme);
     } else if (prefs.getString("theme") == "dark") {
-      settingsProvider.changeTheme(MyThem.darkTheme);
+      settingsProvider.changeTheme(MyTheme.darkTheme);
     }
   }
 }
