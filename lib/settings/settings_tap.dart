@@ -30,8 +30,8 @@ class _SettingsState extends State<Settings> {
           InkWell(
             onTap: (){
               showLanguage();
-
             },
+
             child: Container(
               height: 40,
               margin: EdgeInsets.only(top: 6),

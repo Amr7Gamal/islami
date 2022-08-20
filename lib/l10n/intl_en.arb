@@ -10,5 +10,6 @@
   "light" : "Light",
   "dark" : "Dark",
   "number_praises" : "Number of Praises",
-  "name" : "Name"
+  "sura_name": "Sura Name",
+  "hedith_number" : "Hedith Number"
 }

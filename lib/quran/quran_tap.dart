@@ -25,7 +25,7 @@ class Quran extends StatelessWidget{
           decoration: BoxDecoration(
             border: Border.symmetric(horizontal: BorderSide(color: Theme.of(context).primaryColor , width: 4))
           ),
-          child: Text(AppLocalizations.of(context)!.name , style: Theme.of(context).textTheme.headline2, textAlign: TextAlign.center,),
+          child: Text(AppLocalizations.of(context)!.sura_name , style: Theme.of(context).textTheme.headline2, textAlign: TextAlign.center,),
         ),
 
         Expanded(

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:islami/background_image.dart';
 import 'package:islami/quran/verse_widget.dart';
 
+
 class Sura extends StatefulWidget {
   static const String nameKey = "sura";
 
@@ -32,24 +33,15 @@ class _SuraState extends State<Sura> {
                 style: Theme.of(context).textTheme.headline1,
               ),
             ),
-            body: verses.isEmpty
-                ? CircularProgressIndicator()
-                : Container(
-                      color: Theme.of(context).backgroundColor,
-                    margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-                    child: ListView.separated(
-                      itemBuilder: (_, index) {
-                        return VerseWidget(verses[index], index);
-                      },
-                      itemCount: verses.length,
-                      separatorBuilder: (_, index) {
-                        return Container(
-                          margin: EdgeInsets.symmetric(horizontal: 100),
-                          height: 2,
-                          color: Theme.of(context).primaryColor,
-                        );
-                      },
-                    ),
+            body: Container(
+              color: Theme.of(context).backgroundColor,
+              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              child: ListView.builder(
+                itemBuilder: (_, index) {
+                  return VerseWidget(verses[index], index);
+                },
+                itemCount: verses.length,
+              ),
                   )));
   }
 

@@ -10,5 +10,7 @@
   "light" : "فاتح",
   "dark" : "مظلم",
   "number_praises" : "عدد التسبيحات",
-  "name" : "الاسم"
+  "sura_name": "اسم السورة",
+  "hedith_number" : "رقم الحديث"
+
 }

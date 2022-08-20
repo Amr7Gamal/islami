@@ -33,7 +33,7 @@ class MyTheme {
             fontSize: 28, fontWeight: FontWeight.bold, color: blackColor),
         headline2: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         headline3: TextStyle(fontSize: 25, fontWeight: FontWeight.w400),
-        headline4: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: blackColor),
+        headline4: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: blackColor),
         headline5: TextStyle(fontSize: 16),
         headline6: TextStyle(
             fontSize: 14, color: blackColor,
